@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailWind CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/tabler-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- Header Part -->
+<header class="bg-green-600 py-3">
+    <div class="container mx-auto flex flex-row items-center flex-nowrap justify-between px-4 md:px-4">
+        <div class="mb-4 md:mb-0">
+            <a href="index.html" class="block flex items-center">
+                <img src="images/mine.jpeg" class="block w-8 rounded-circle mr-2">
+                <p class="text-white font-bold">Dev Zak</p>
+            </a>
+        </div>
+        <div class="hidden md:block">
+            <ul>
+                <li class="inline-block"><a href="index.html" class="px-2 py-4 block uppercase font-medium text-gray-200 hover:text-white duration-150 transition-colors ease-linear">Home</a></li>
+                <li class="inline-block"><a href="#about" class="px-2 py-4 block uppercase font-medium text-gray-200 hover:text-white duration-150 transition-colors ease-linear">About</a></li>
+                <li class="inline-block"><a href="#service" class="px-2 py-4 block uppercase font-medium text-gray-200 hover:text-white duration-150 transition-colors ease-linear">Service</a></li>
+                <li class="inline-block"><a href="#contact" class="px-2 py-4 block uppercase font-medium text-gray-200 hover:text-white duration-150 transition-colors ease-linear">Contact</a></li>
+            </ul>
+        </div>
+        <div class="block text-white uppercase font-normal cursor-pointer block md:hidden"><i class="ti ti-menu-2"></i></div>
+    </div>
+</header>
+<!-- End Header Part -->
+
+<!-- Offcanvas Menu -->
+<div class="mobile-menu bg-white fixed top-0 right-0 w-full md:w-80 h-full pl-8 pt-10 hidden z-10">
+    <div class="fixed top-0 right-0 w-8 h-8 text-center mt-4 mr-4 border border-gray-300 leading-loose text-gray-500 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-all ease-linear close-menu"><i class="ti ti-x"></i></div>
+    <ul class="mt-10">
+        <li class="block"><a href="index.html" class="py-2 block uppercase font-medium text-gray-700 hover:text-gray-900 duration-150 transition-colors ease-linear">Home</a></li>
+        <li class="block"><a href="#about" class="py-2 block uppercase font-medium text-gray-700 hover:text-gray-900 duration-150 transition-colors ease-linear">About</a></li>
+        <li class="block"><a href="#service" class="py-2 block uppercase font-medium text-gray-700 hover:text-gray-900 duration-150 transition-colors ease-linear">Service</a></li>
+        <li class="block"><a href="#contact" class="py-2 block uppercase font-medium text-gray-700 hover:text-gray-900 duration-150 transition-colors ease-linear">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Hero Area -->
+<div class="bg-green-200 bg-hero-bg bg-cover bg-center py-20 md:py-40 bg-blend-darken">
+    <div class="container mx-auto px-2 md:px-4">
+        <div class="text-center py-20 max-w-4xl mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold mb-8 text-white font-raleway">Figma to React</h1>
+            <p class="text-gray-300 font-raleway">Utility classes help you work within the constraints of a system instead of littering your stylesheets with arbitrary values. They make it easy to be consistent with color choices, spacing, typography, shadows, and everything else that makes up a well-engineered design system.</p>
+            <button class="text-white rounded border py-2 px-4 mt-4 transition-all ease-linear hover:text-gray-500 hover:border-gray-500">Read More</button>
+        </div>
+    </div>
+</div>
+<!-- End Hero Area -->
+
+<!-- About Area -->
+<div class="bg-white py-20 md:py-20" id="about">
+    <div class="container mx-auto px-2 md:px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 place-items-center max-w-4xl mx-auto gap-4">
+            <div class="mb-4 md:mb-0">
+                <img src="images/mine.jpeg" class="border-4 border-double ring-2 shadow-md ring-blue-500 border-gray-500">
+            </div>
+            <div class="text-center md:text-left">
+                <p class="font-medium text-gray-500">About Me</p>
+                <h2 class="font-bold text-green-700 text-xl md:text-3xl font-raleway mb-2">Full Stack Web Developer</h2>
+                <p class="font-raleway text-sm md:text-base">Lorem Ipsum content here. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <button class="text-black-700 rounded border border-gray-900 py-2 px-4 mt-4 transition-all ease-linear hover:text-gray-500 hover:border-gray-500">Read More</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About Area -->
+
+<!-- Service Area -->
+<div class="bg-gray-50 py-20 md:py-40 lg:py-40" id="service">
+    <div class="container mx-auto px-2 lg:px-4 md:px-4">
+        <div class="max-w-3xl mx-auto text-center mb-20">
+            <p class="font-medium text-gray-500">What I Offer</p>
+            <h2 class="font-bold font-raleway mb-2 text-3xl text-green-700">My Services</h2>
+        </div>
+        <div class="grid grid-cols-1 gap-0 lg:gap-8 lg:grid-cols-4 md:gap-4">
+            <div class="text-center border border-gray-300 p-10 lg:p-10 hover:shadow-lg transition-all ease-linear md:p-4 mb-4 md:mb-0">
+                <h4 class="font-medium font-bold text-base mb-4">WordPress</h4>
+                <p>Lorem Ipsum content here. There are many variations of passages of Lorem Ipsum available.</p>
+                <button class="text-green-500 hover:text-green-900 transition-all ease-linear font-medium mt-6">Learn More</button>
+            </div>
+            <div class="text-center border border-gray-300 p-10 lg:p-10 hover:shadow-lg transition-all ease-linear md:p-4 mb-4 md:mb-0">
+                <h4 class="font-medium font-bold text-base mb-4">Gutenberg</h4>
+                <p>Lorem Ipsum content here. There are many variations of passages of Lorem Ipsum available.</p>
+                <button class="text-green-500 hover:text-green-900 transition-all ease-linear font-medium mt-6">Learn More</button>
+            </div>
+            <div class="text-center border border-gray-300 p-10 lg:p-10 hover:shadow-lg transition-all ease-linear md:p-4 mb-4 md:mb-0">
+                <h4 class="font-medium font-bold text-base mb-4">React</h4>
+                <p>Lorem Ipsum content here. There are many variations of passages of Lorem Ipsum available.</p>
+                <button class="text-green-500 hover:text-green-900 transition-all ease-linear font-medium mt-6">Learn More</button>
+            </div>
+            <div class="text-center border border-gray-300 p-10  hover:shadow-lg transition-all ease-linear md:p-4">
+                <h4 class="font-medium font-bold text-base mb-4">Node</h4>
+                <p>Lorem Ipsum content here. There are many variations of passages of Lorem Ipsum available.</p>
+                <button class="text-green-500 hover:text-green-900 transition-all ease-linear font-medium mt-6">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Service Area -->
+
+<!-- Contact Area -->
+<div class="bg-white py-20" id="contact">
+    <div class="container mx-auto px-2 md:px-4">
+        <div class="max-w-full md:max-w-3xl mx-auto">
+            <div class="mb-20">
+                <h2 class="font-medium font-raleway mb-2 text-3xl text-green-700 italic text-center">Contact Me</h2>
+            </div>
+            <div class="max-w-full md:max-w-2xl mx-auto">
+                <form class="text-base">
+                    <div class="flex">
+                        <input type="text" placeholder="First Name" class="block border border-gray-300 w-full mr-4 px-4 py-2 focus:outline-none">
+                        <input type="text" placeholder="Last Name" class="block border border-gray-300 w-full px-4 py-2 focus:outline-none">
+                    </div>
+                    <div class="mt-4 mb-4">
+                        <input type="email" placeholder="Enter your email" class="block w-full border border-gray-300 px-4 py-2 focus:outline-none">
+                    </div>
+                    <div class="mb-4">
+                        <textarea rows="5" placeholder="Your Message" class="block w-full resize-none border border-gray-300 px-4 py-2 focus:outline-none"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button class="bg-green-500 px-8 py-2 rounded text-white font-normal uppercase hover:bg-gray-900 transition-all ease-linear"> Send it</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Contact Area -->
+<div class="bg-green-600 py-2">
+    <div class="container mx-auto md:px-4 sm:px-2">
+        <p class="text-center text-white text-gray-300"> No Copyright. Made with ❤️ by <a href="https://webackstop.com" class="text-gray-200 hover:text-white transition-all ease-linear"> Dev Zak</a></p>
+    </div>
+</div>
+
+<!-- JS files -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/plugin.js"></script>
+</body>
+</html>
